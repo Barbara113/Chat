@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  background: linear-gradient(rgba(51, 103, 214, 0.4), rgba(164, 7, 179, 0.2));
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+}
+
+.header {
+  height: 90px;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(10, 31, 82);
+}
+
+.userNameInputWrapper {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+}
+
+.contentWrapper {
+  background: rgba(10, 31, 82, 0.3);
+  border: 2px solid rgba(10, 31, 82, 0.8);
+  border-radius: 5px;
+  width: fit-content;
+  padding: 25px;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+}
+
+label {
+  margin-bottom: 0%;
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(10, 31, 82);
+  border-radius: 3px;
+  color: gray;
+  margin-bottom: 10%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h1 {
+  color: whitesmoke;
+  padding: 20px;
+}
+
+.messagesListWrapper {
+  padding: 20px 0;
+  max-width: 80%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  list-style: none;
+  max-height: 70%;
+  height: 70%;
+  position: absolute;
+  left: 10%;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.displayMessages {
+  display: flex;
+  margin-top: 10px;
+}
+
+.displayMessages.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.messageValue {
+  display: inline-block;
+}
+
+.currentMember .messageValue {
+  align-items: flex-end;
+}
+
+.displayMessages .icon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+}
+
+.messageValue .username {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.messageValue .text {
+  padding: 10px;
+  max-width: 250px;
+  margin: 0;
+  border-radius: 20px 20px 20px 0px;
+  background-color: rgb(210, 100, 237);
+  color: white;
+  display: inline-block;
+}
+
+.currentMember .messageValue .text {
+  background-color: rgb(0, 72, 255);
+  border-radius: 20px 20px 0px 20px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.none {
+  display: none;
+}
+
+.inputComponent {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  width: 98%;
+  height: auto;
+}
+
+.inputValue {
+  width: 100%;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#userNameValue {
+  height: 25px;
+}
+
+.username {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}

@@ -1,0 +1,57 @@
+.buttonClass {
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(10, 31, 82), rgb(114, 12, 140));
+  border: 1px solid rgb(79, 201, 193);
+  color: white;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 80%;
+  width: 200px;
+  background: linear-gradient(
+    105deg,
+    rgb(10, 31, 82),
+    rgb(114, 12, 140),
+    rgb(10, 31, 82),
+    rgb(114, 12, 140),
+    rgb(10, 31, 82)
+  );
+
+  background-size: 200% 200%;
+  animation: rainbow 1.5s linear infinite;
+  border: 0;
+  color: #fff;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes buttonAnimation {
+  from {
+    background-image: linear-gradient(
+      to right,
+      rgb(114, 12, 140),
+      rgb(10, 31, 82)
+    );
+  }
+  to {
+    background-image: linear-gradient(
+      to right,
+      rgb(10, 31, 82),
+      rgb(114, 12, 140)
+    );
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  background: transparent;
+}
+.disabled:hover {
+  background: transparent;
+}
